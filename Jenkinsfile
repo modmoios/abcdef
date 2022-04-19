@@ -1,8 +1,5 @@
-node('master') {
-    stage("Fetch Source Code") {
-        git 'https://github.com/TrainingByPackt/Beginning-Jenkins.git'
-    }
-    
+node {
+
     dir('Lesson5') {
         printMessage('Running Pipeline')
         stage("Testing") {
