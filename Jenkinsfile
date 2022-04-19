@@ -1,5 +1,7 @@
 node {
-
+    stage("Clone code") {
+        git https://github.com/modmoios/abcdef.git
+    }
     printMessage('Running Pipeline')
     stage("Testing") {
         sh 'python test_functions.py'
